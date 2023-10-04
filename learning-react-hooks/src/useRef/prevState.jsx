@@ -1,25 +1,27 @@
 import React, {useRef,useState,useEffect} from "react";
 
 
-const RenderCountExample = () => {
-    const renderCount = useRef(0)
-    const [otherState, setOtherState] = useState(false)
+const PrevStateExample = () => {
+    const prevState = useRef('')
+    const [otherState, setOtherState] = useState('false')
     const toggleOtherState  = () => {
-        setOtherState(!otherState)
+        setOtherState(prevState => prevState === 'false' ? 'true' : 'false')
     }
     useEffect(() => {
-        renderCount.current++
-    })
+        prevState.current = otherState
+    },[otherState])
+
 
 
     return (
         <>
             <h1>Предыдущее состояние</h1>
-            {renderCount.current}
-            <p> render count: {renderCount.current}</p>
+            <p> Prev State: {prevState.current}</p>
+            <p> Current State: {otherState}</p>
             <button className='btn btn-primary' onClick={toggleOtherState}>Toggle other state</button>
         </>
+
     )
 }
 
-export default RenderCountExample
+export default PrevStateExample
