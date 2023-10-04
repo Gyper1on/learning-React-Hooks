@@ -15,10 +15,10 @@ const PrevStateExample = () => {
 
     return (
         <>
-            <h1>Предыдущее состояние</h1>
+            <h4>Предыдущее состояние</h4>
             <p> Prev State: {prevState.current}</p>
             <p> Current State: {otherState}</p>
-            <button className='btn btn-primary' onClick={toggleOtherState}>Toggle other state</button>
+            <button className='btn btn-primary ms-md-2' onClick={toggleOtherState}>Toggle other state</button>
         </>
 
     )

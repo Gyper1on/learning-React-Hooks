@@ -14,10 +14,10 @@ const RenderCountExample = () => {
 
     return (
         <>
-            <h1>Отслеживание количества рендеров </h1>
+            <h4>Отслеживание количества рендеров </h4>
             {renderCount.current}
             <p> render count: {renderCount.current}</p>
-            <button className='btn btn-primary' onClick={toggleOtherState}>Toggle other state</button>
+            <button className='btn btn-primary ms-md-2' onClick={toggleOtherState}>Toggle other state</button>
         </>
     )
 }
