@@ -4,6 +4,7 @@ import RenderCountExample from "./useRef/renderCount";
 import PrevStateExample from "./useRef/prevState";
 import ProgrammablActionsExample from "./useRef/programmablActionsExample";
 import ComplexCalculateExample from "./useMemo/comlexCalculate";
+import UseCallbackExample from "./useCallback/useCallbackExample";
 
 
 const App = () => {
@@ -16,6 +17,9 @@ const App = () => {
             <hr/>
             <h1>! useMemo !</h1>
             <ComplexCalculateExample/>
+            <hr/>
+            <h1>! useCallback !</h1>
+            <UseCallbackExample/>
         </>
     )
 }
