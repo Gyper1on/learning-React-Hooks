@@ -5,6 +5,7 @@ import PrevStateExample from "./useRef/prevState";
 import ProgrammablActionsExample from "./useRef/programmablActionsExample";
 import ComplexCalculateExample from "./useMemo/comlexCalculate";
 import UseCallbackExample from "./useCallback/useCallbackExample";
+import HOCExample from "./hoc/hocExample";
 
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
             <hr/>
             <h1>! useCallback !</h1>
             <UseCallbackExample/>
+            <hr/>
+            <h1>! HOC !</h1>
+            <HOCExample/>
         </>
     )
 }
