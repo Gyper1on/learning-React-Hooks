@@ -6,6 +6,7 @@ import ProgrammablActionsExample from "./useRef/programmablActionsExample";
 import ComplexCalculateExample from "./useMemo/comlexCalculate";
 import UseCallbackExample from "./useCallback/useCallbackExample";
 import HOCExample from "./hoc/hocExample";
+import MemoWithUseCallbackExample from "./memo/memoWithUseCallback";
 
 
 const App = () => {
@@ -24,6 +25,8 @@ const App = () => {
             <hr/>
             <h1>! HOC !</h1>
             <HOCExample/>
+                <h1>! React.Memo !</h1>
+                <MemoWithUseCallbackExample/>
         </>
     )
 }
