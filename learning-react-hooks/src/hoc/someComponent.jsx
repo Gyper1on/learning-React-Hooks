@@ -8,4 +8,4 @@ const SomeComponent = ({ name }) => {
 SomeComponent.propTypes = {
     name: PropTypes.string
 };
-export default SomeComponent;
+export default SomeComponent
