@@ -5,11 +5,17 @@ const PrevStateExample = () => {
     const prevState = useRef('')
     const [otherState, setOtherState] = useState('false')
     const toggleOtherState  = () => {
-        setOtherState(prevState => prevState === 'false' ? 'true' : 'false')
+        setOtherState(prevState  =>  {
+            console.log('setOtherState' + prevState)
+          return   prevState === 'false' ? 'true' : 'false'
+        } )
     }
     useEffect(() => {
+        console.log('useEffect' + otherState)
         prevState.current = otherState
-    },[otherState])
+        setOtherState(otherState === 'false' ? 'true' : 'false')
+
+    },[])
 
 
 
